@@ -1,0 +1,24 @@
+/* Design tokens, taken from the TaiJi prototype. */
+:root {
+  --paper: #f6f3ec;
+  --card: #ffffff;
+  --ink: #2e3440;
+  --muted: #5e6673;
+  --faint: #8a8578;
+  --line-soft: #e4e0d6;
+  --line-dashed: #c9c4b8;
+  --highlight: #f3d46b;
+  --highlight-soft: #fff6d6;
+  --link: #2e6f73;
+  --link-hover: #1d4f52;
+  --blush: #f08a8a;
+
+  --radius-sm: 12px;
+  --radius: 14px;
+  --radius-lg: 24px;
+  --radius-xl: 28px;
+  --border: 2px solid var(--ink);
+
+  --font: 'M PLUS Rounded 1c', 'Noto Sans TC', system-ui, sans-serif;
+  --font-glyph: 'Noto Sans TC', sans-serif;
+}

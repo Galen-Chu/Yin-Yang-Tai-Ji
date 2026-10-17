@@ -1,0 +1,105 @@
+import type { HiddenForm } from '../../core';
+
+/**
+ * Layer 5 · 互動 — six hidden forms, each testing a different layer combo.
+ * Order is priority: when several match, the first one wins.
+ */
+export const hidden: HiddenForm[] = [
+  {
+    id: 'typhoon',
+    name: { en: 'Typhoon Eye', zh: '颱風眼' },
+    line: { en: 'At the centre of the storm, it is the quietest.', zh: '風暴中心，反而最安靜。' },
+    hint: { en: 'Summer · Tremble → Drift → Whirl in a row', zh: '夏・抖抖 → 飄飄 → 繞繞（連續）' },
+    riddle: { en: 'Panic, drift away, then turn once around.', zh: '慌亂、飄走，然後轉一圈。' },
+    shape: 'spin',
+    look: {
+      top: 'linear-gradient(135deg,#FFFFFF 0%,#D9DEE4 35%,#F4F6F8 55%,#B8C0C9 100%)',
+      bottom: 'linear-gradient(135deg,#8A939D 0%,#5B636C 40%,#9AA3AD 60%,#3E454D 100%)',
+      accent: '#2F353C',
+      sky: '#C3CAD2',
+      ground: '#5B636C',
+    },
+    effects: ['storm-ring'],
+    when: { season: 'summer', sequence: ['tremble', 'drift', 'whirl'] },
+  },
+  {
+    id: 'kuroshio',
+    name: { en: 'Kuroshio Drifter', zh: '黑潮旅人' },
+    line: { en: 'However far it drifts, it always finds the way home.', zh: '走得再遠，也找得到回家的路。' },
+    hint: { en: 'Spring · Drift · Coral Reef · turtle + driftwood', zh: '春・飄飄・珊瑚礁・小綠蠵龜＋漂流木' },
+    riddle: { en: 'In spring, drift along with old friends of the current.', zh: '春天，跟著海流的老朋友一起漂。' },
+    shape: 'flow',
+    look: {
+      top: 'repeating-linear-gradient(100deg,rgba(255,255,255,0) 0 18px,rgba(255,255,255,.6) 18px 24px),linear-gradient(180deg,#DCEAF5,#94B6D6)',
+      bottom: 'repeating-linear-gradient(100deg,rgba(110,170,230,0) 0 16px,rgba(110,170,230,.5) 16px 22px),linear-gradient(180deg,#2B3F94,#121F5C)',
+      accent: '#0B1645',
+      sky: '#BCD0E6',
+      ground: '#16246E',
+      backgroundSize: '120px 100%,100% 100%',
+      halfAnimation: 'tj-current 2.4s linear infinite',
+    },
+    when: { place: 'reef', season: 'spring', touch: 'drift', items: ['turtle', 'driftwood'] },
+  },
+  {
+    id: 'firefly',
+    name: { en: 'Firefly River', zh: '螢河' },
+    line: { en: 'In the dark, it glows quietly anyway.', zh: '在黑暗裡，也能安靜地發光。' },
+    hint: { en: 'Canal · Summer · firefly + glass float', zh: '水圳・夏・螢火蟲＋玻璃浮球' },
+    riddle: {
+      en: 'A summer night by the water, with a little light and something that floats.',
+      zh: '夏夜的水邊，帶著一點光，和一顆會浮起來的球。',
+    },
+    shape: 'base',
+    look: { top: '#DDE6F5', bottom: '#3F5E7A', accent: '#F6F08A', sky: '#1E2A44', ground: '#16304A' },
+    effects: ['fireflies'],
+    when: { place: 'canal', season: 'summer', items: ['firefly', 'float'] },
+  },
+  {
+    id: 'sea',
+    name: { en: 'Sea of Clouds', zh: '雲海' },
+    line: {
+      en: 'Cloud and sponge spin into one sky-sea, and everything goes quiet.',
+      zh: '雲與海綿轉成一整片雲海，一切都安靜下來。',
+    },
+    hint: { en: 'Whirl · Ridges · Winter', zh: '繞繞・山巒・冬' },
+    riddle: { en: 'It loves high places in the cold, and can’t stop circling.', zh: '它喜歡寒冷時的高處，而且停不下來轉圈。' },
+    shape: 'split',
+    look: { top: '#FFFFFF', bottom: '#E9EEF4', accent: '#C9D3DD', sky: '#E9EEF4', ground: '#C9D3DD' },
+    when: { place: 'ridges', season: 'winter', touch: 'whirl' },
+  },
+  {
+    id: 'rainbow',
+    name: { en: 'Rainbow TaiJi', zh: '彩虹台吉' },
+    line: { en: 'After the storm, it hops out in every colour.', zh: '風雨過後，帶著所有顏色跳出來。' },
+    hint: { en: 'After Typhoon Eye · Beach · Spring · Hop', zh: '颱風眼之後・海灘・春・跳跳' },
+    riddle: { en: 'The spring after a storm — go hop by the sea.', zh: '風雨過後的春天，去海邊跳一跳。' },
+    shape: 'hop',
+    look: {
+      top: 'radial-gradient(circle farthest-side at 50% 100%,#FFFFFF 0 16%,#B39DDB 16% 30%,#81D4FA 30% 44%,#A5D6A7 44% 58%,#FFF59D 58% 72%,#FFD180 72% 86%,#FF8A80 86% 100%)',
+      bottom: 'radial-gradient(circle farthest-side at 50% 0%,#FFFFFF 0 16%,#B39DDB 16% 30%,#81D4FA 30% 44%,#A5D6A7 44% 58%,#FFF59D 58% 72%,#FFD180 72% 86%,#FF8A80 86% 100%)',
+      accent: 'rgba(255,255,255,.5)',
+      sky: '#E6F6FB',
+      ground: '#4FC6DA',
+    },
+    when: { place: 'beach', season: 'spring', touch: 'hop', requires: ['typhoon'] },
+  },
+  {
+    id: 'twin',
+    name: { en: 'MianMian', zh: '綿綿' },
+    line: { en: 'Two TaiJi nestle into one soft circle and share the weight.', zh: '兩個台吉軟綿綿地窩成一個圓，一起分擔重量。' },
+    hint: { en: 'Autumn · Nestle · with a friend', zh: '秋・窩窩・和朋友一起' },
+    riddle: { en: 'In autumn, some hugs take two.', zh: '秋天，有些擁抱需要兩個人。' },
+    shape: 'nestle',
+    look: {
+      top: '#FFF4E8',
+      bottom: '#F7B9A0',
+      accent: '#E8957A',
+      sky: 'linear-gradient(135deg,#FFE3EC 0%,#FFF1D6 30%,#E6F5DC 55%,#DDEBFA 78%,#EEE2F8 100%)',
+      ground: 'linear-gradient(90deg,#FFD9C9,#FFE9B8,#D9F0D0,#CFE4F7)',
+      friendTop: '#FFF8EC',
+      friendBottom: '#FFCFA8',
+    },
+    effects: ['confetti'],
+    when: { season: 'autumn', touch: 'nestle', friend: true },
+  },
+];
