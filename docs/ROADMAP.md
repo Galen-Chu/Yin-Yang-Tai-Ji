@@ -8,11 +8,11 @@
 - [x] 台吉內容資料：9 地點、5 觸碰、4 季節、27 收集物、6 隱藏形態
 - [x] 原型等級 UI：舞台、形態卡、地點／收集物、台吉圖鑑
 - [x] `localStorage` 進度儲存（含資料淨化）
-- [x] 單元測試（規則、所有隱藏形態、手勢、儲存）與 GitHub Actions CI
+- [x] 單元測試（規則、所有隱藏形態、手勢、儲存）與 GitHub Actions CI（PR 檢查、main 自動部署）
 
 ## M1 · 可玩版 Playable
 
-- [ ] 部署到 GitHub Pages（需要在 repo 設定啟用 Pages → GitHub Actions）
+- [x] 部署到 GitHub Pages：<https://galen-chu.github.io/Yin-Yang-Tai-Ji/>
 - [ ] PWA：manifest、圖示、離線快取，可加到手機主畫面
 - [ ] 在真實手機上調校手勢門檻（`DEFAULT_GESTURE_CONFIG`）
 - [ ] 變身回饋：音效、觸覺回饋（`navigator.vibrate`）、新發現動畫

@@ -9,7 +9,9 @@
 
 一隻會隨「地點 × 觸碰 × 季節 × 收集物」變身的台灣吉祥物，以及收集牠所有形態的互動圖鑑。
 
-[![CI](https://github.com/Galen-Chu/Yin-Yang-Tai-Ji/actions/workflows/ci.yml/badge.svg)](https://github.com/Galen-Chu/Yin-Yang-Tai-Ji/actions/workflows/ci.yml)
+### [▶ 線上試玩 Play now](https://galen-chu.github.io/Yin-Yang-Tai-Ji/)
+
+[![Deploy](https://github.com/Galen-Chu/Yin-Yang-Tai-Ji/actions/workflows/deploy.yml/badge.svg)](https://github.com/Galen-Chu/Yin-Yang-Tai-Ji/actions/workflows/deploy.yml)
 [![Code: MIT](https://img.shields.io/badge/Code-MIT-yellow.svg)](LICENSE)
 [![Character: CC BY-NC 4.0](https://img.shields.io/badge/Character-CC%20BY--NC%204.0-lightgrey.svg)](LICENSE-CHARACTER.md)
 
@@ -97,6 +99,8 @@ npm run dev        # 開發伺服器 http://localhost:5173
 | `npm run build` | 型別檢查＋產出 `dist/` 靜態網站 |
 | `npm run preview` | 預覽建置結果 |
 
+推送到 `main` 會自動測試、建置並部署到 [GitHub Pages](https://galen-chu.github.io/Yin-Yang-Tai-Ji/)（[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)）；PR 只跑檢查不部署。
+
 技術棧：**React 19 · TypeScript · Vite · Vitest**。純前端，進度存在瀏覽器 `localStorage`，目前不需後端。
 
 ## 專案結構
@@ -131,7 +135,7 @@ docs/
 ## 開發路線
 
 - [x] **M0 · 架構** — 引擎、內容資料、原型級 UI、測試、CI
-- [ ] **M1 · 可玩版** — PWA、無障礙、分享形態卡
+- [ ] **M1 · 可玩版** — ~~GitHub Pages 部署~~ ✅、PWA、無障礙、分享形態卡
 - [ ] **M2 · 現場打卡** — 地理圍欄取代按鈕打卡、真實季節
 - [ ] **M3 · 貼圖試行** — 原形＋5 觸碰形態貼圖組，觀察使用狀況
 - [ ] **M4 · 社群** — 雲端同步、朋友互動
