@@ -43,6 +43,5 @@
 
 ## 待決定的問題
 
-- **角色 IP 授權**：程式碼目前以 MIT 釋出。若要保留台吉角色設計的商業權利，建議把美術素材與角色設定分開授權（例：CC BY-NC 4.0 或保留所有權利），並在 README 註明。
 - **後端選型**（M4 才需要）：Supabase / Firebase / 自架。
 - **原生 App**：PWA 不足時再評估 Capacitor 或 React Native。

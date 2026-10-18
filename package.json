@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "description": "TaiJi 台吉 — a changing-character mascot collection log (吉祥物圖鑑).",
-  "license": "MIT",
+  "license": "(MIT AND CC-BY-NC-4.0)",
   "type": "module",
   "engines": {
     "node": ">=22.12.0"

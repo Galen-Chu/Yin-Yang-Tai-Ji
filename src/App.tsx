@@ -69,6 +69,17 @@ export function App() {
         </div>
 
         <Dex def={def} game={game} />
+
+        <footer className="page-footer">
+          TaiJi 台吉 © 2026 Galen Chu ·{' '}
+          <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noreferrer">
+            Character CC BY-NC 4.0
+          </a>{' '}
+          ·{' '}
+          <a href="https://github.com/Galen-Chu/Yin-Yang-Tai-Ji" target="_blank" rel="noreferrer">
+            Code MIT
+          </a>
+        </footer>
       </main>
     </LangContext.Provider>
   );

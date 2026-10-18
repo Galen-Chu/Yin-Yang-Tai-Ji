@@ -138,6 +138,7 @@ when: {
 1. 複製 `src/characters/taiji/` 為 `src/characters/<新角色>/`，改寫所有內容與 `describe` 句型。
 2. 在 `App.tsx` 換掉 `def`（之後可做角色選單）。
 3. 跑一次 `validateCharacter()`。框架層 `core/` 不需修改。
+4. 授權：框架程式碼是 MIT，新角色的授權由角色作者自行決定；台吉本身是 CC BY-NC 4.0（見 [`LICENSE-CHARACTER.md`](../LICENSE-CHARACTER.md)），複製資料夾當骨架後，請把台吉的內容全部換掉。
 
 ## 內容準則
 

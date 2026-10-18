@@ -1,3 +1,8 @@
+/*
+ * TaiJi 台吉 © 2026 Galen Chu — CC BY-NC 4.0.
+ * Everything in src/characters/taiji/ is character content, not MIT code.
+ * See LICENSE-CHARACTER.md.
+ */
 import type { CharacterDefinition, Shape } from '../../core';
 import { hidden } from './hidden';
 import { items } from './items';

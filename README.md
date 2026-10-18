@@ -10,7 +10,8 @@
 一隻會隨「地點 × 觸碰 × 季節 × 收集物」變身的台灣吉祥物，以及收集牠所有形態的互動圖鑑。
 
 [![CI](https://github.com/Galen-Chu/Yin-Yang-Tai-Ji/actions/workflows/ci.yml/badge.svg)](https://github.com/Galen-Chu/Yin-Yang-Tai-Ji/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Code: MIT](https://img.shields.io/badge/Code-MIT-yellow.svg)](LICENSE)
+[![Character: CC BY-NC 4.0](https://img.shields.io/badge/Character-CC%20BY--NC%204.0-lightgrey.svg)](LICENSE-CHARACTER.md)
 
 </div>
 
@@ -149,4 +150,11 @@ npm run typecheck && npm test && npm run build
 
 ## 授權
 
-本專案以 [MIT License](LICENSE) 釋出。© 2026 Galen Chu
+本專案採**雙重授權**，© 2026 Galen Chu：
+
+| 對象 | 授權 | 商業使用 |
+| --- | --- | --- |
+| 程式碼（引擎、UI、儲存、設定檔） | [MIT](LICENSE) | ✅ 可以 |
+| 台吉角色（名稱、造型、配色、角色設定與文案、美術素材，含 `src/characters/taiji/`、`public/`） | [CC BY-NC 4.0](LICENSE-CHARACTER.md) | ❌ 需另行取得授權 |
+
+簡單說：歡迎拿框架和程式碼去做你自己的變身角色；台吉本身可以分享、二創，但不能拿來賺錢。範圍細節見 [`LICENSE-CHARACTER.md`](LICENSE-CHARACTER.md)。
